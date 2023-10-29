@@ -9,8 +9,6 @@ class Solution {
              resultMap[i] = arr1[i] | arr2[i];
         }
 
-        System.out.println(Arrays.toString(resultMap));
-
         for (int i = 0; i < resultMap.length; i++) {
             answer[i] = Integer.toBinaryString(resultMap[i]);
 
