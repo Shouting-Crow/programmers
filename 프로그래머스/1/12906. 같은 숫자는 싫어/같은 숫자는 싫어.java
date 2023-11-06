@@ -14,7 +14,13 @@ public class Solution {
                 arrayList.add(arr[i]);
             }
         }
+        
+        int[] answer = new int[arrayList.size()];
 
-        return arrayList.stream().mapToInt(i -> i).toArray();
+        for (int i = 0; i < answer.length; i++) {
+            answer[i] = arrayList.get(i);
+        }
+
+        return answer;
     }
 }
